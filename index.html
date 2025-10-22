@@ -17,18 +17,9 @@
       padding: 60px 20px;
     }
 
-    .logo {
+    img.logo {
       width: 120px;
-      height: 120px;
-      background: linear-gradient(to bottom, #00ff9f, #00bfff, #a020f0);
-      border-radius: 50%;
       margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2em;
-      font-weight: bold;
-      color: black;
     }
 
     h1 {
@@ -100,35 +91,41 @@
       transform: scale(1.05);
     }
 
-    .social-links {
+    .social-buttons {
       margin-top: 50px;
       display: flex;
-      gap: 40px;
+      gap: 20px;
       justify-content: center;
-      font-size: 1.1em;
+      flex-wrap: wrap;
+    }
+
+    .btn-social {
+      background: linear-gradient(to right, #00bfff, #a020f0);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-social:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00ff9f, #00bfff);
     }
 
     .contract {
-      margin-top: 20px;
+      margin-top: 30px;
       font-family: monospace;
       font-size: 0.9em;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 10px 20px;
       border-radius: 6px;
     }
-
-    a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-  <div class="logo">🔥</div>
+  <img src="assets/logo.svg" alt="Bad Boy Coin Logo" class="logo" />
 
   <h1>BAD BOY COIN</h1>
   <p class="tagline">A memecoin that blends attitude, brotherhood, and purpose.</p>
@@ -155,9 +152,9 @@
 
   <button class="cta-button">Join the journey</button>
 
-  <div class="social-links">
-    <a href="https://x.com/badboycoin" target="_blank">X (Twitter)</a>
-    <a href="https://t.me/badboycoin" target="_blank">Telegram</a>
+  <div class="social-buttons">
+    <a href="https://x.com/badboycoin" target="_blank" class="btn-social">🐦 Follow us on X</a>
+    <a href="https://t.me/badboycoin" target="_blank" class="btn-social">💬 Join us on Telegram</a>
   </div>
 
   <div class="contract">
