@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +21,14 @@
       width: 120px;
       height: 120px;
       background: linear-gradient(to bottom, #00ff9f, #00bfff, #a020f0);
-      -webkit-mask-image: url('logo.svg'); /* substitua por sua logo em SVG */
-      mask-image: url('logo.svg');
-      mask-size: cover;
+      border-radius: 50%;
       margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: black;
     }
 
     h1 {
@@ -48,6 +52,37 @@
       margin-bottom: 40px;
     }
 
+    .spirit-section {
+      max-width: 700px;
+      margin: 60px auto;
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #eee;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .spirit-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #00bfff;
+      background: linear-gradient(to right, #00ff9f, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .cta-button {
       background: linear-gradient(to right, #a020f0, #00bfff);
       color: black;
@@ -58,6 +93,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.2s ease;
+      margin-top: 20px;
     }
 
     .cta-button:hover {
@@ -92,22 +128,31 @@
   </style>
 </head>
 <body>
-  <div class="logo"></div>
+  <div class="logo">😈</div>
 
   <h1>BAD BOY COIN</h1>
-  <p class="tagline">A memecoin sem freio. Sem filtro. Sem desculpas.</p>
+  <p class="tagline">The memecoin with no brakes. No filter. No apologies.</p>
 
   <div class="manifesto">
-    💣 Somos a moeda dos que não pedem permissão.<br />
-    Dos que não seguem regras.<br />
-    Dos que fazem barulho, quebram padrões e não se curvam a ninguém.<br />
-    <strong>Bad Boy Coin</strong> não é só uma memecoin — é um movimento.<br />
-    Se você quer status, vá pra outro lugar.<br />
-    Aqui é atitude, zoeira e liberdade.<br />
-    Porque o mundo cripto precisa de um vilão.
+    💣 We’re the coin for those who don’t ask for permission.<br />
+    Who don’t follow rules.<br />
+    Who make noise, break molds, and bow to no one.<br />
+    <strong>Bad Boy Coin</strong> is more than a memecoin — it’s a movement.<br />
+    If you want clout, go somewhere else.<br />
+    This is attitude, trolling, and freedom.<br />
+    Because crypto needed a villain.
   </div>
 
-  <button class="cta-button">Junte-se ao caos</button>
+  <section class="spirit-section">
+    <h2>The Spirit of Bad Boy Coin</h2>
+    <p><span class="highlight">We rise when others fall.</span> We face the market, the memes, and the noise — head-on and unshaken.</p>
+    <p><span class="highlight">Every dip fuels our fire.</span> Every doubt sharpens our edge.</p>
+    <p><span class="highlight">Bad Boy Coin is more than a memecoin — it's a mindset.</span></p>
+    <p>We laugh at volatility. We build with courage. We move forward when no one else dares.</p>
+    <p><span class="highlight">If you believe in long-term hustle, in turning pressure into power — you're already Bad Boy.</span></p>
+  </section>
+
+  <button class="cta-button">Join the chaos</button>
 
   <div class="social-links">
     <a href="https://x.com/badboycoin" target="_blank">X (Twitter)</a>
